@@ -75,6 +75,14 @@ function tienenMismaLongitud(str1, str2) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
+  var resultado
+  if(str1.length == str2.length){
+    resultado = true;
+  }else{
+    resultado = false;
+  }
+
+  return resultado;
   
 }
 
@@ -82,6 +90,15 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
+  let resultado;
+
+  if(num < 90){
+    resultado = true
+  }else{
+    resultado = false;
+  }
+
+  return resultado;
   
 }
 
@@ -90,45 +107,81 @@ function mayorQueCincuenta(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   
+  let resultado ;
+
+  if(num > 50){
+    resultado = true;
+  }else{
+    resultado = false;
+  }
+
+
+  return resultado;
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
+
+  let resultado = x % y;
   
+  return resultado;
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+
+  let resultado;
+
+  if(num % 2 == 0){
+    resultado = true;
+  }else{
+    resultado =false;
+  }
+  return resultado;
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  let resultado;
+
+  if(num % 2 != 0){
+    resultado = true;
+  }else{
+    resultado = false;
+  }
+  return resultado;
 }
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
+
+  var resultado = Math.pow(num, 2);
   
+  return resultado;
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
+  let resultado = Math.pow(num, 3);
+
+  return resultado;
   
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  
+
+  let resultado = Math.pow(num, exponent);
+  return resultado;
 }
 
 function redondearNumero(num) {

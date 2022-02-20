@@ -5,12 +5,33 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
+
+  var resultado;
+  if(x > y){
+    resultado = x;
+  }else if(x === y ){
+    resultado = y;
+  }else if(x < y){
+    resultado = y;
+  }
+
+  return resultado;
 }
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
+
+  var resultado;
+
+  if (edad < 18){
+    resultado = 'Not allowed';
+  }else {
+    resultado = 'Allowed'
+  }
+
+  return resultado;
 }
   
 function conection(status) {
@@ -19,6 +40,17 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
+
+  let resultado;
+  if(status === 1){
+      resultado = 'Online';
+  }else if(status === 2){
+      resultado = 'Away';
+  }else{
+    resultado = 'Offline';
+  }
+
+  return resultado;
 }
 
 function saludo(idioma) {
@@ -28,6 +60,19 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+
+  var resultado;
+  if (idioma === 'aleman'){
+      resultado = `Guten Tag!`; 
+  }else if (idioma === 'mandarin'){
+      resultado = `Ni Hao!`;
+  }else if (idioma === 'ingles'){
+      resultado = `Hello!`;
+  }else{
+      resultado = `Hola!`;
+  }
+
+  return resultado;
 }
 
 function colors(color) {
@@ -38,6 +83,23 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+
+  let resultado;
+
+  switch (color) {
+    case 'blue': resultado = `This is blue`;
+          break;
+    case 'red': resultado = `This is red`;
+          break;
+    case 'green': resultado = `This is green`;
+          break;
+    case 'orange': resultado = `This is orange`;
+          break;
+    default: resultado = `Color not found`;
+          break;
+  }
+
+  return resultado;
 }
 
 function esDiezOCinco(numero) {

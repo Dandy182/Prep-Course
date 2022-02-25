@@ -28,4 +28,27 @@
                 return variable_resultado;
             }
 
-6) 
+6) Declaraciones if = nos permite tomar un camino u otro dependiendo de las concidiones que se le den,
+                      para generar las condiciones usamos los operadores logícos, podemos usar una o varias 
+                      condiciones según se requiera.
+
+                      if(condicion){
+                          codigo; (opcion 1)
+                      }else{
+                          codigo (opcion 2)
+                      }
+
+                      
+                      Se pueden generar varios caminos agregando un if al else de la siguiente manera
+
+                      if(condicion){
+                          codigo; (opcion 1)
+                      }else if(condicion 2){
+                          codigo; (opcion 2)
+                      }else if(condicion 3){
+                          codigo; (opcion 3)
+                      }
+
+7) valores booleanos = los valores booleanos son dos true o false, estos representan un valor de 1 (true)
+                       o un valor de 0 (false), con lo cual 
+                      

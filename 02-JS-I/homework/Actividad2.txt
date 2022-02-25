@@ -5,4 +5,27 @@
 2) Strings = Son un tipo de variable que permite guardar un grupo de palabras, 
              numeros, etc, caracteres. Pero estos van a ser tomados como texto.
 
-3) funciones = Las funciones 
+3) funciones = son pedazos de codigo que podemos reutilizar en cualquier momento,
+               estos pedazos de codigo pueden devolver o no un valor.
+
+               function nombre_funcion(){
+                   aqui vá el codigo;
+               }
+
+4) argumentos = Los argumentos son básicamente son datos que se le dan a algunas 
+                funciones para que puedan procesar y devolver un resultado.
+
+                function nombre_funcion(argumento1, argument2, etc){
+                    aqui vá el codigo;
+                }
+
+5) return = El return es una palabra reservada que se utilizara para hacer que una
+            funcion devuelva un valor, esta palabra reservada se debe poner al final
+            de la funcion junto con la variable que contiene el valor a regresar.
+
+            function nombre_funcion(){
+                aqui va el codigo;
+                return variable_resultado;
+            }
+
+6) 

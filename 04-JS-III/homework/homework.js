@@ -162,8 +162,7 @@ function multiplicarArgumentos() {
        // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
     // Escribe tu código aquí:
 
-<<<<<<< HEAD
-=======
+
     var resultado = 1;
 
     if (arguments.length > 1) {
@@ -177,7 +176,6 @@ function multiplicarArgumentos() {
     }
 
     return resultado;
->>>>>>> c68bc46850f9d93fd5fd54db036ee146f627b048
 }
 
 
@@ -274,5 +272,4 @@ module.exports = {
     breakStatement,
     continueStatement
 };
-continueStatement
-};
+continueStatement;

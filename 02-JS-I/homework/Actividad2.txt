@@ -1,0 +1,8 @@
+1) variables = Se podría decir que las variables son como cajas, las cuales nos
+               permiten guardar datos, como por ejemplo, caracteres, numeros, 
+               palabras, etc.
+
+2) Strings = Son un tipo de variable que permite guardar un grupo de palabras, 
+             numeros, etc, caracteres. Pero estos van a ser tomados como texto.
+
+3) funciones = Las funciones 

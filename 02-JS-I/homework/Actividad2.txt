@@ -50,5 +50,11 @@
                       }
 
 7) valores booleanos = los valores booleanos son dos true o false, estos representan un valor de 1 (true)
-                       o un valor de 0 (false), con lo cual 
-                      
+                       o un valor de 0 (false), con ellos podemos definir junto a los peradores logicos y
+                       los operadores de comparacion para realizar flujos de control.
+
+                       if( a < b){
+                           resultado = true; -> en este si la comparacion se cumple es true
+                       }else{
+                           resultado = false; -> si no se cumple, entonces es false;
+                       }

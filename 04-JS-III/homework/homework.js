@@ -176,8 +176,6 @@ function multiplicarArgumentos() {
     return resultado
     ;
 
-    
-  
 }
 
 
@@ -185,6 +183,15 @@ function cuentoElementos(arreglo) {
     //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
     //Escribe tu código aquí
 
+    let resultado = 0;
+
+    for(var i = 0; i<arreglo.length; i++){
+        if(arreglo[i] > 18){
+            resultado++;
+        }
+    }
+
+    return resultado;
 }
 
 
@@ -194,6 +201,20 @@ function diaDeLaSemana(numeroDeDia) {
     //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
     //Escribe tu código aquí   
 
+    let dia = new Array(' ', 'domingo', 'lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sábado'),
+        resultado ;
+    for(var i=0; i<=dia.length; i++){
+        
+        if(numeroDeDia >= 2 && numeroDeDia <= 6){
+            resultado = 'Es dia Laboral';
+        }else if(numeroDeDia == 1 || numeroDeDia == 7 ){
+            resultado = 'Es fin de semana';
+        }
+        
+    }
+    return resultado;
+
+
 }
 
 
@@ -201,6 +222,21 @@ function empiezaConNueve(n) {
     //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
     //inicia con 9 y false en otro caso.
     //Escribe tu código aquí
+
+    var resultado, dato;
+
+    dato = n;
+    while(dato > 10){
+        dato = dato / 10;
+    }
+
+    if(parseInt(dato) == 9){
+        resultado = true;
+    }else {
+        resultado = false;
+    }
+
+    return resultado;
 
 }
 

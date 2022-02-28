@@ -1,0 +1,17 @@
+arrays = los vectores son básicamente tipo de variable que pueden
+         acumular un grupo de datos y se guardan de forma ordenada,
+         los vectores aceptan cualquier tipo de dato, incluso un array 
+         puede ingresar otros arrays. 
+
+         var vector = [1, 'hola', null, undefined];
+
+         Los arrays funcionan como una lista enumerada, eso quiere decir que
+         si queremos un elemento especifico de la lista solo le señalamos que
+         elemento queremos ver.
+
+         si quiero que el array vector me muestre el valor hola le damos la posición
+         de hola dentro de corchetes (los vectores inician con la posición 0);
+
+         vector[1]; -> esto me muestra como resultado en valor 'hola', puesto que las posiciones
+                       inician en cero.
+

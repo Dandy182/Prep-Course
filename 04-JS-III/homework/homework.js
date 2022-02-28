@@ -162,20 +162,19 @@ function multiplicarArgumentos() {
        // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
     // Escribe tu código aquí:
 
+    var resultado;
 
-    var resultado = 1;
-
-    if (arguments.length > 1) {
-        for (var i = 0; i < arguments.length; i++) {
-            resultado *= arguments[i];
-        }
-    } else if (arguments.length === 1) {
-        resultado = arguments;
-    } else if (arguments == undefined) {
+    if (arguments.length < 1) {
         resultado = 0;
+    } else {
+        resultado = 1;
+        for (var i = 0; i < arguments.length; i++) {
+            resultado = resultado * arguments[i];
+        }
     }
 
     return resultado;
+
 }
 
 
@@ -183,6 +182,15 @@ function cuentoElementos(arreglo) {
     //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
     //Escribe tu código aquí
 
+    let resultado = 0;
+
+    for (var i = 0; i < arreglo.length; i++) {
+        if (arreglo[i] > 18) {
+            resultado++;
+        }
+    }
+
+    return resultado;
 }
 
 
@@ -192,6 +200,20 @@ function diaDeLaSemana(numeroDeDia) {
     //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
     //Escribe tu código aquí   
 
+    let dia = new Array(' ', 'domingo', 'lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sábado'),
+        resultado;
+    for (var i = 0; i <= dia.length; i++) {
+
+        if (numeroDeDia >= 2 && numeroDeDia <= 6) {
+            resultado = 'Es dia Laboral';
+        } else if (numeroDeDia == 1 || numeroDeDia == 7) {
+            resultado = 'Es fin de semana';
+        }
+
+    }
+    return resultado;
+
+
 }
 
 
@@ -199,6 +221,21 @@ function empiezaConNueve(n) {
     //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
     //inicia con 9 y false en otro caso.
     //Escribe tu código aquí
+
+    var resultado, dato;
+
+    dato = n;
+    while (dato > 10) {
+        dato = dato / 10;
+    }
+
+    if (parseInt(dato) == 9) {
+        resultado = true;
+    } else {
+        resultado = false;
+    }
+
+    return resultado;
 
 }
 
@@ -208,6 +245,21 @@ function todosIguales(arreglo) {
     //retornar true, caso contrario retornar false.
     //Escribe tu código aquí  
 
+    var resultado, dato = arreglo[0];
+
+    for (var i = 0; i < arreglo.length; i++) {
+
+        if (arreglo[i] !== dato) {
+            resultado = false;
+        } else {
+            resultado = true;
+        }
+
+    }
+
+    return resultado;
+
+
 }
 
 
@@ -216,6 +268,24 @@ function mesesDelAño(array) {
     // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
     //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
     // Tu código:
+
+    var resultado = new Array(),
+        contador = 0;
+
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] == 'Enero' || array[i] == 'Marzo' || array[i] == 'Noviembre') {
+            resultado[contador] = array[i];
+            contador++
+        }
+    }
+
+    if (contador == 3) {
+        return resultado;
+    } else {
+        return 'No se encontraron los meses pedidos';
+    }
+
+
 }
 
 
@@ -223,6 +293,19 @@ function mayorACien(array) {
     //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
     //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
     // Tu código:
+    var resultado = new Array(),
+        contador = 0;
+
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > 100) {
+            resultado[contador] == array[i];
+            contador++;
+        }
+    }
+    git
+    return resultado;
+
+
 }
 
 

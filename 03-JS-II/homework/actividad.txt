@@ -1,1 +1,35 @@
+<<<<<<< HEAD
 for -> Este esta
+=======
+for -> es declaracion, que permite repetir el codigo que pongamos dentro de ella de forma
+       definida, es decir que podemos definir la cantidad de veces que podemos repetir el
+       el codigo.
+
+       for(var i = 0; i<10;i++){
+           codigo a repetir;
+       }
+
+       Como vemos en el ejemplo anterior en la parte del parentesis se usa la variable i para
+       iniciar el for en cero y va a terminar cuando el i valga 9 porqué le estamos diciendo que
+       se ejecute mientras el valor de i sea menor a 10.
+
+&& = este es el operador logíco and,esto quiere decir que si dos expresiones son verdaderas el retorna 
+     como resultado true, por otro lado, si una de las dos expresiones es falsa el resultado va a
+     ser false.
+
+     1 < 2 && 2 < 0 -> este da como resultado falso, debido a que la primera expresion es verdadera, pero la segunda es falsa
+
+     1 < 2 && 2 < 4 -> este da verdadero ya que las dos expresiones son verdaderas.
+
+|| = Este es el operador logíco or, esto quiere decir que si una expresion es verdadera y la otra es falsa el
+     retornará verdadero ya que una de las dos es verdadera, con este operador la unica forma de tener un 
+     false es que las dos expresiones sean falsas.
+
+     1 < 8 || 8 >2 -> esta dá como resultado verdadero porque solo se requiere una de las dos expresiones 
+                      para que sea verdadera 
+
+! = Este es el operador logíco not, al usar este operador damos la respuesta contraria a la que debemos usar,
+    esto debido a que este operador es el contrario al de igualdad.
+    
+    a != b -> esto quiere decir que a es diferente de b ó a no es igual a b
+>>>>>>> 9b25abd9007d4b83364a1d717a4772b35e6bb4fd

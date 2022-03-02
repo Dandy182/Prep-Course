@@ -97,6 +97,15 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+  var resultado;
+
+  if(objeto[propiedad]){
+    resultado = true; 
+  }else{
+    resultado = false;
+  }
+
+  return resultado;
 }
 
 function verificarPassword(usuario, password) {

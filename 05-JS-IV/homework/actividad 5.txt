@@ -1,0 +1,3 @@
+Objetos = Son una colección de datos relacionados entre si, funcionan muy similar a los
+          arrays, es decir: reciben cualquier tipo de dato, incluyendo arrays, funciones e
+          incluso otros objetos

@@ -1,3 +1,50 @@
-Objetos = Son una colección de datos relacionados entre si, funcionan muy similar a los
-          arrays, es decir: reciben cualquier tipo de dato, incluyendo arrays, funciones e
-          incluso otros objetos
+Objetos = Los objetos son similares a los arrays, son una colección de datos y 
+          pueden almacenar cualquier tipo de dato; pero la diferencia es que
+          mientras los arrays guardan datos que pueden tener o no relación entre si
+          los objetos guardan datos que describen a una cosa.
+
+          personas['juan', 'camion', 'rojo'] -> estructura de un array;
+
+          persona[1] -> obtener un valor del array
+
+          _________________________________________________________________________
+
+          persona = {                        -> estructura de un objeto;    
+              nombre: 'Juan Carlos', -->propiedad de objeto persona
+              apellido: 'Benites Caro', -->propiedad de objeto persona
+              edad: 24,
+              saludo = function(){
+                  console.log('hola a todos');
+              } 
+          }
+
+          persona[nombre] -> forma de obtener un valor del objeto;
+                                     ó
+          persona.nombre -> forma 2 de obrener un valor del objeto;
+
+ Como se puede puede apreciar en el ejemplo anterior los arrays se crean usando los corchetes {},
+ mientras los arrays se crean usando los brackets [], también los array por defecto tienen un indice 
+ numerico, es decir que para acceder a los valores del array se usa la variable que contiene y 
+ dentro de corchetes se pone el numero del campo donde está el valor que necesitamos array[1].
+ 
+ Por otra parte, los objetos usan de indice los keywords con los que definimos que es cada dato que se adiciona
+ al objeto, estos se llaman propiedades, estas propiedades son básicamente los nombres que se le dan a cada uno de
+ los campos que tiene un objeto.
+
+ Como dijimos antes los objetos pueden recibir cualquier tipo de dato incluyendo funciones, a las funciones que estan
+ dentro de un objeto se le conocen como metodos y se pueden invocar de la siguiente forma. tomemos como ejemplo el objeto
+ perosna...
+
+
+            persona.saludad();
+
+bucle for..in = el for..in loop es una forma de recorrer los objetos como lo hacemos cuando usamos el for en los vectores,
+con la diferencia de que en vez de recorrer el objeto usando numero el for..in los recorre por los keywords., podemos usar 
+la clave y la notacion de corchetes en nuestro for..in para acceder al valor asociado con la clave
+
+
+for (let clave in usuario){
+    console.log(clave);
+    console.log(usuario[clave]);
+}
+

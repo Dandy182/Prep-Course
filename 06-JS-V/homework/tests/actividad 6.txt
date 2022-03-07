@@ -1,0 +1,9 @@
+prototype = Nos permite escribir metodos en nuestra clase una sola vez y dá acceso a cada objeto
+            que nosotros creemos para que pueda usarlo, eso nos permite ahorrar memoria, sin afectar
+            a nuestras clases.
+
+            objeto.prototype.nombre_funcion = function(){
+                
+            }
+
+            los metodos de prototype pueden tener acceso a los datos de cada clase usando this.

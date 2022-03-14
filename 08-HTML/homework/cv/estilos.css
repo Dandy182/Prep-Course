@@ -421,6 +421,14 @@ template {
 
 /* configuracion global */
 
+:root{
+    --verde:274257;
+    --blanco:#fff;
+    --oswald:'Oswald', sans-serif;
+    --lato:'Lato', sans-serif;
+    --openSans:'Open Sans', sans-serif;
+}
+
 html{
     box-sizing: border-box;
 }
@@ -429,37 +437,13 @@ html{
     box-sizing: inherit;
 }
 
-body {
-    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-    background-attachment: fixed;
+body{
+    background-color: var(--verde);
+    font-size:62.5%;
+    font-family: var(--openSans);
 }
 
-img{
-    max-width: 100%;
-}
-
-.contenedor{
-    width: 1000px;
-    margin:0 auto;
-    max-width: 90%;;
-}
-
-/*header*/
-
-.site-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:2rem;
-    padding:2rem 0;
-}
-
-.foto{
-    max-width: 30%;;
-    border-radius: 50%;
-    flex-basis: calc(30%);
-    border: 10px double rgb(55, 49, 49); 
-    -webkit-box-shadow: 4px 10px 5px -5px rgba(0,0,0,0.19);
-    -moz-box-shadow: 4px 10px 5px -5px rgba(0,0,0,0.19);
-     box-shadow: 4px 10px 5px -5px rgba(0,0,0,0.19); 
+h1{
+    font-family: var(--oswald);
+    font-weight: 400;
 }

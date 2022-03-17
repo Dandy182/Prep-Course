@@ -1,0 +1,8 @@
+Funciones Callback = Los Callback son funciones que se le pasan a otras 
+                     funciones como argumento para usarlas en otro momento,
+                     esto me permite aumentar la cantidad de cosas que podemos
+                     desarrollar.
+
+                     Esto tambíen nos dá posibilidades de aprovechar el codigo y hacerlo escalable.
+
+                     

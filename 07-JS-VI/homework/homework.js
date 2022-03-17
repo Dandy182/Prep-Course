@@ -67,7 +67,18 @@ function filter(array) {
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
 
-  array.filter();
+  var dato = new Array();
+  var contador = 0;
+
+  for(var i = 0; i<array.length; i++){
+    if(array[i][0] == 'a'){
+      dato[contador] = array[i];
+      contador++
+    }
+  }
+
+  return dato;
+
 }
 
 // No modificar nada debajo de esta línea

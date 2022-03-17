@@ -422,7 +422,7 @@ template {
 /* configuracion global */
 
 :root{
-    --verde:274257;
+    --verde:#274257;
     --blanco:#fff;
     --oswald:'Oswald', sans-serif;
     --lato:'Lato', sans-serif;
@@ -443,7 +443,110 @@ body{
     font-family: var(--openSans);
 }
 
+@media only screen and (min-width:768px){
+    body{
+        display: grid;
+        grid-template-columns: repeat(30% 70%);
+        column-gap: 2rem;
+        justify-content: stretch;
+    }
+
+    .blanco{
+        grid-column: 2/3;
+    }
+
+    .verde{
+        grid-row:1/2;
+    }
+}
+
+h1{
+    margin:0;
+}
+
 h1{
     font-family: var(--oswald);
     font-weight: 400;
+    font-size:4rem;
+    text-align: center;
+    
+}
+
+p{
+    font-size:1.6rem;
+    font-family:var(--openSans);
+    margin:0;
+}
+.contenedor{
+    width:1000px;
+    margin:0 auto;
+    max-width: 95%;
+}
+
+img{
+    max-width: 100%;
+}
+
+.blanco{
+    background-color: var(--blanco);
+    margin:0 auto;
+}
+.verde{
+    float:right;
+    color:var(--blanco);
+   
+}
+
+@media only screen and (min-width:768px){
+    .blanco{
+        margin:1rem 1rem 0 0;
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    padding:.5rem;
+}
+
+/* encabezado*/
+
+.site_header{
+    padding:1rem;
+    text-align: center;
+}
+
+@media only screen and (min-width:762px){
+    .site_header{
+        display:grid;
+        column-gap: 2rem;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: repeat(1, 1fr);
+        align-items: center;
+        
+    }
+    .site_header_texto{
+        grid-column: 2/3;
+        grid-row:1/2;
+    }
+
+    img{
+        grid-column: 1/2;
+    }
+}
+
+.site_header img{
+    border-radius: 50%;
+}
+.site_header p{
+    font-weight: 100;
+}
+
+.datos_base{
+    font-size: 1.6rem;
+    font-family: var(--oswald);
+    font-weight: 100;
+    
 }

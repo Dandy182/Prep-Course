@@ -496,7 +496,7 @@ p{
 
 .verde{
     color: var(--blanco);
-    padding:1rem;
+    padding:2rem 1rem;
 }
 
 h1,h2,h3{
@@ -652,27 +652,31 @@ ul{
 
 /******************************************* idiomas */
 
-.verde.p3{
+.verde.p3, .verde.p6{
     border-top: 2px solid var(--blanco);
 }
 
 .barr{
     border:1px solid var(--blanco);
     display:grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     padding:.1rem;
 }
-
-.cien{
+.barr_llena{
     background-color: var(--blanco);
     padding:1rem;
-    grid-column: 1/5;
 }
 
-.veincinco{
-    background-color: var(--blanco);
-    padding:1rem;
-    grid-column: 1/2;
+.dato_perfil p{
+    text-transform: uppercase;
+}
+
+.noventa{
+    grid-column: 1/9;
+}
+
+.cincuenta{
+    grid-column: 1/5;
 }
 
 /******************************************* experiencia */
@@ -688,3 +692,65 @@ ul{
 .verde.p4{
     grid-row:6/8;
 }
+
+.setenta{
+    grid-column: 1/7;
+}
+
+.diez{
+    grid-column: 1/2;
+}
+
+.ochenta{
+    grid-column: 1/8;
+}
+
+.sesenta{
+    grid-column: 1/6;
+}
+
+/******************************************* Cursos  */
+.blanco.p4{
+    grid-column: 2/3;
+    grid-row: 8/13;
+    margin-bottom: 2rem;
+}
+
+
+/******************************************* Referencias */
+
+.verde.p5{
+    grid-row:8/10;
+    padding-top:5rem;
+}
+
+.referencias h2, .ref{
+    padding-bottom: 2rem;
+}
+
+.ref h3{
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.ref p{
+    padding:0;
+    
+}
+
+/******************************************* Intereses */
+
+.verde.p6{
+    grid-row:12/13;
+}
+
+.texto_intereses{
+    margin:0;
+}
+
+.texto_intereses li{
+    font-size:2.5rem;
+    font-weight: 300;
+    line-height: 2;
+}
+

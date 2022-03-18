@@ -419,7 +419,7 @@ template {
 }
 
 
-/* configuracion global */
+/***************************************** configuracion global */
 
 :root{
     --verde:#274257;
@@ -454,8 +454,8 @@ body{
     body{
         display: grid;
         grid-template-columns: 30% 70%;
-        grid-template-rows: ifr;
-        column-gap: 1rem;
+        grid-template-rows: repeat(5, 40rem);
+        column-gap: 2rem;
     }
 
     .verde{
@@ -463,13 +463,22 @@ body{
         grid-row: 1/2;
     }
 
-    .p2{
-        grid-row:2/3;
+    .verde.p2{
+        grid-row:2/4 ;
     }
 
-    .blanco{
+    .p3{
+        grid-row:3/4
+    }
+
+    .blanco.p2{
         grid-column: 2/3;
+        grid-row: 2/6;
     
+    }
+
+    .verde.p3{
+        grid-row:5/6;
     }
 }
 
@@ -490,24 +499,44 @@ p{
     padding:1rem;
 }
 
+h1,h2,h3{
+    text-transform: uppercase;
+    margin: 0;
+}
+
 h1{
     font-family: var(--oswald);
     font-weight: 400;
-    margin: 0;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 h2{
-    text-transform: uppercase;
+    font-size:3.8rem;
+    font-family: var(--lato);
 }
 
-.flex{
-    display: flex;
-    align-items: center;
-    column-gap: 1rem;
+h3{
+    font-size: 3rem;
+    font-family: var(--lato);
+    font-weight: 300;
+
 }
 
-/*encabezado*/
+@media only screen and (min-width:768px){
+    .flex{
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+
+/***************************************************** encabezado*/
+
 .site_header img{
     border-radius: 50%;
 }
@@ -519,16 +548,21 @@ h2{
 }
 
 .site_header_texto p{
-    font-weight: 200;
+    font-weight: 100;
     text-align: center;
+    font-family: var(--openSans);
+    font-size: 2rem;
 }
 
 @media only screen and (min-width:768px){
     .site_header{
+        max-width: 800px;
         display: grid;
         grid-template-columns: 30% 70%;
         column-gap: 1rem;
         align-items: center;
+        justify-content: space-around;
+        margin:0 auto;
     }
 
     .foto{
@@ -544,14 +578,99 @@ h2{
 }
 
 
-/*Datos base */
+/*****************************************  Datos base */
 
 .datos_base{
     list-style: none;
+    padding-top: 4rem ;
 }
 
 .datos_base li{
-    padding:.5rem 0;
+    padding:.8rem 0;
+    font-size: 2rem;
    
 }
+/******************************************* perfil */
 
+.perfil h2{
+    padding-bottom:2rem ;
+}
+.perfil p{
+    font-size: 2.5rem;
+    line-height: 2;
+    font-weight: 200;
+}
+
+/******************************************* experiencia */
+
+.texto_experiencia{
+    padding:8rem 2rem 2rem 2rem;
+}
+
+.texto_experiencia h2{
+    color:var(--verde);
+}
+
+.texto_experiencia ul li{
+    padding-top: 2rem;
+}
+@media only screen and (min-width:768px){
+    .texto_experiencia{
+        max-width: 1000rem;
+        margin: 0 auto;
+    }
+
+    .titulo_experiencia{
+        justify-content: space-between;
+    }
+
+    .titulo_experiencia h3{
+        flex-direction:column;
+
+    }
+    
+}
+
+.texto_experiencia_info{
+    padding:2rem 0 1rem 0;
+    list-style:circle;
+}
+
+@media only screen and (min-width:768px){
+    .texto_experiencia_info{
+        padding:2rem 0 1rem 10rem;
+        
+    }
+}
+
+.texto_experiencia_info li{
+    padding:1rem;
+    font-size:2.2rem;
+    font-family: var(--openSans);
+}
+
+
+/******************************************* idiomas */
+
+.verde.p3{
+    border-top: 2px solid var(--blanco);
+}
+
+.barr{
+    border:1px solid var(--blanco);
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding:.1rem;
+}
+
+.cien{
+    background-color: var(--blanco);
+    padding:1rem;
+    grid-column: 1/5;
+}
+
+.veincinco{
+    background-color: var(--blanco);
+    padding:1rem;
+    grid-column: 1/2;
+}

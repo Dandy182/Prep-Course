@@ -674,3 +674,17 @@ ul{
     padding:1rem;
     grid-column: 1/2;
 }
+
+/******************************************* experiencia */
+
+.blanco.p3{
+    grid-column: 2/3;
+    grid-row:6/11;
+    margin-top:2rem;
+}
+
+/******************************************* habilidades */
+
+.verde.p4{
+    grid-row:6/8;
+}

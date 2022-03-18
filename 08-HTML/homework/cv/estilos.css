@@ -454,7 +454,7 @@ body{
     body{
         display: grid;
         grid-template-columns: 30% 70%;
-        grid-template-rows: repeat(5, 40rem);
+        grid-template-rows: repeat(auto-fill, 40rem);
         column-gap: 2rem;
     }
 
@@ -754,3 +754,8 @@ ul{
     line-height: 2;
 }
 
+/******************************************* porque quiero estudiar en henry */
+
+.blanco.p6{
+    grid-column: 2/3;
+}

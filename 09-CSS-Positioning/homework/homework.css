@@ -48,8 +48,17 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
   display:flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: rowgi-reverse;
+  gap:2rem;
+  flex-direction: column;
 }
 
 
 /* Ejercicio 6. */
+#ejercicioSiete{
+  display: flex;
+  align-items: center;
+}
+
+#elementoUno{
+  flex-flow: column;
+}

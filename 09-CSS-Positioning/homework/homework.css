@@ -49,16 +49,25 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
   justify-content: space-around;
   align-items: center;
   gap:2rem;
-  flex-direction: column;
+  flex-direction: row-reverse;
 }
 
 
 /* Ejercicio 6. */
 #ejercicioSiete{
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 #elementoUno{
-  flex-flow: column;
+  align-self:center;
+}
+
+#elementoDos{
+  align-self:stretch;
+}
+
+#elementoCuatro{
+  align-self: center;
 }

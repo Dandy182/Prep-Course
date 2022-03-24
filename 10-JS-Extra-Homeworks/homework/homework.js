@@ -36,8 +36,19 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+
+  var objeto = {};
   
+  
+  for(var i = 0 ; i< string.length;i++){
+    if(!objeto[string[i]]){
+      objeto[string[i]] = 0;
+    }
+    objeto[string[i]] += 1
+  }
+  return objeto;
 }
+
 
 
 function capToFront(s) {
@@ -45,6 +56,24 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  var resultado = [];
+
+  for(var i =0; i<s.length;i++){
+    if(s.charCodeAt(i) > 64 && s.charCodeAt(i) < 91){
+      resultado.push(s[i]);
+     } 
+   }
+
+  for(var i =0; i< s.length;i++){
+    if(s.charCodeAt(i) > 96 && s.charCodeAt(i) < 123){
+    resultado.push(s[i]) ;
+  }
+
+  
+}
+
+return resultado.join("");
+
 }
 
 
